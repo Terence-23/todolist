@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/next_b"
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="236dp"
+        android:text="next"
+        app:layout_constraintBottom_toTopOf="@+id/task_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prev_b"
+        app:layout_constraintTop_toBottomOf="@+id/task_out" />
+
+    <TextView
+        android:id="@+id/task_out"
+        android:layout_width="348dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Your tasks will be displayed here11\n1\n1\n1\n1\n1\n1\n1\n"
+        app:layout_constraintBottom_toTopOf="@+id/prev_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/task_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="139dp"
+        android:ems="10"
+        android:hint="enter your task"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prev_b" />
+
+    <Button
+        android:id="@+id/add_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="139dp"
+        android:text="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/task_in"
+        app:layout_constraintTop_toBottomOf="@+id/next_b" />
+
+    <Button
+        android:id="@+id/prev_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="400dp"
+        android:text="prev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_out" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
